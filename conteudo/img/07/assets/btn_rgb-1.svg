@@ -1,0 +1,5 @@
+<svg id="btn_rgb" xmlns="http://www.w3.org/2000/svg" width="295" height="101" viewBox="0 0 295 101">
+  <rect id="Retângulo_139" data-name="Retângulo 139" width="295" height="101" rx="50.5" fill="#3498db"/>
+  <text id="RGB" transform="translate(134 62)" fill="#fff" font-size="33" font-family="Roboto-Medium, Roboto" font-weight="500" letter-spacing="0.024em"><tspan x="0" y="0">RGB</tspan></text>
+  <path id="Icon_material-computer" data-name="Icon material-computer" d="M53.753,43.627A5.368,5.368,0,0,0,59.1,38.252l.027-26.877A5.391,5.391,0,0,0,53.753,6h-43a5.391,5.391,0,0,0-5.375,5.375V38.252a5.391,5.391,0,0,0,5.375,5.375H0V49H64.5V43.627Zm-43-32.252h43V38.252h-43Z" transform="translate(55.006 22.999)" fill="#fff"/>
+</svg>
