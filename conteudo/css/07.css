@@ -1,14 +1,10 @@
 body {
-    background-image: url('../img/02/background.png');
+    /* background-image: url('../img/07/assets/bg.svg');
     background-attachment: fixed;
     background-color: none;
-    background-size: cover;
+    background-size: cover; */
 }
-.fundo-tecnicos{
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
-}
+
 .header-tecnicos{
 	position: relative;
 	overflow: hidden;
@@ -29,6 +25,29 @@ header.senac{
 button.close img {
     width: 30px;
 }
+.pagina{
+    margin-top: -122px!important;
+}
+.pagina .bg1{
+    padding-top: 100px!important;
+}
+.bg1{
+    background-image: url('../img/07/assets/bg.svg');
+    background-attachment: fixed;
+    background-color: none;
+    background-size: cover;
+}
+.bg2{
+    background-image: url('../img/07/assets/bg.svg');
+    background-attachment: fixed;
+    background-color: none;
+    background-size: cover;
+}
+.fundo-tecnicos{
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+}
 .imgoOverBlur{
     margin-bottom: -380px;
     z-index: 10;
@@ -37,10 +56,13 @@ button.close img {
 .imgoOverBlur figcaption{
     color: #fff;
 }
-
-figcaption {
+.imgBlur{
+    filter: blur(4px);
+    max-width: 100%;
+}
+    figcaption {
     text-align: center;
-    margin: 1.4em 0 1.4em 0;
+    margin-bottom: 30px;
 }
 .painebts{
     max-width: 750px;
@@ -51,7 +73,7 @@ figcaption {
     cursor: pointer;
     margin: 10px;
     width: 100%;
-    max-width: 350px;
+    max-width: 227px;
 }
 
 .painebts img:hover{
@@ -59,10 +81,8 @@ figcaption {
 }
 .modal-header h4{ color: #fff !important;}
 .modal-content{
-    /* background-color: #DC9281; */
-    background-image: url('../img/02/background_modal.png') !important;
-    background-size: cover;
-    color: #fff !important;
+    background-color: #DC9281;
+    color: #fff;
     padding: 40px;
 }
 .fig-flex {
@@ -82,7 +102,7 @@ figcaption {
     margin-bottom: 0;
 }
 h1.titulo{
-    color: #AB3A31;
+    color: rgb(71,92,83);
 }
 h3 {
     margin-top: 60px;
@@ -91,10 +111,6 @@ h4 {
     margin-top: 50px;
     margin-bottom: 20px;
 }
-.imgFloat{position: absolute; top:200px; max-width: 10%;}
-.imgFloatDir{ right: 0%;}
-.imgFloatEsq{ left: 0%;}
-.imgFloattop{ top: 500px;}
 .modal-btn {
     background-color: #c3c3c330;
     border-radius: 20px;
@@ -115,43 +131,48 @@ h4 {
     display: flex;
     justify-content: center;
 }
-
-/*----------- CARDS -----------*/
-.img-cards{
-    width: 400px;
-    height: 500px;
-    cursor: pointer;
-  }
-  .flip-card {
-    height: 500px;
-  }
-  .flip-card-inner {
+.imgferrari{
+    max-width: 350px;
+    float: right;
     position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  .flip-card-front, .flip-card-back {
+    margin-top: 50px;
+}
+
+.imgferrari figcaption{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .flip-card-front {
-  }
-  .flip-card-back {
-    transform: rotateY(180deg);
-  }
-  /*----------- /CARDS -----------*/
-@media screen and (max-width:1200px){
-	.imgFloat{
-        display: none;
-	}
-    
+    bottom: 45px;
+    z-index: 120;
+    max-width: 200px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    color: #fff;
+}
+.boxFull{
+    margin-top: -80px;
+    padding: 100px 0px;
+    background: rgb(71,92,83);
+    background: linear-gradient(90deg, rgba(71,92,83,1) 0%, rgba(71,92,83,1) 50%, rgba(255,132,72,1) 100%);
+color: #fff;
+}
+.grupo-imprimir button{
+    background-color: transparent !important;
+}
+.grupo-imprimir button:hover{
+    opacity: 0.5;
+}
+
+
+
+
+@media screen and (max-width:1100px){
+
+    .boxFull{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width:600px){
+    .imgferrari{
+        float: none;
+    }
 }

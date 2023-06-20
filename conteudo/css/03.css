@@ -4,11 +4,7 @@ body {
     background-color: none;
     background-size: cover;
 }
-.fundo-tecnicos{
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
-}
+
 .header-tecnicos{
 	position: relative;
 	overflow: hidden;
@@ -26,8 +22,11 @@ body {
 header.senac{
 	background-color:#E84B3C;
 }
-button.close img {
-    width: 30px;
+
+.fundo-tecnicos{
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
 }
 .imgoOverBlur{
     margin-bottom: -380px;
@@ -116,42 +115,50 @@ h4 {
     justify-content: center;
 }
 
-/*----------- CARDS -----------*/
-.img-cards{
-    width: 400px;
-    height: 500px;
+h1 i, h2 i, h3 i, h4 i{
+    font-weight: bold;
+}
+
+.div-painel{
+    border: #28afb2 solid 3px;
+    border-radius: 10px;
+    width: 550px;
+    display: block;
+    margin: 100px auto 0px auto;
+    padding: 20px 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.div-navegacao{
+    border: #28afb2 solid 2px;
+    border-radius: 10px;
+    width: 450px;
+    display: block;
+    margin: 80px auto 0px auto;
+    padding: 10px 0px;
+}
+
+.img-fig18, .img-fig19{
     cursor: pointer;
-  }
-  .flip-card {
-    height: 500px;
-  }
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .flip-card-front {
-  }
-  .flip-card-back {
-    transform: rotateY(180deg);
-  }
-  /*----------- /CARDS -----------*/
+    transition: all 0.3s;
+}
+.img-afirmativa{
+    border: #31ab37 solid 10px;
+}
+.img-negativa{
+    border: #AB3A31 solid 10px;
+}
+
 @media screen and (max-width:1200px){
 	.imgFloat{
         display: none;
 	}
     
+}
+
+@media screen and (max-width:480px){
+    .div-painel, .div-navegacao{
+        width: 100%;
+    }
 }

@@ -4,6 +4,27 @@ body {
     background-color: none;
     background-size: cover;
 }
+
+.header-tecnicos{
+	position: relative;
+	overflow: hidden;
+	height:80px;
+	background-image: url(../images/bg-topo-red.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	/* background-image:url(../images/bg-topo-logobg.png), url(../images/bg-topo-red.jpg);
+	background-position:right,center;
+	background-repeat:no-repeat, no-repeat;
+	background-size: contain, cover; */
+
+}
+header.senac{
+	background-color:#E84B3C;
+}
+button.close img {
+    width: 30px;
+}
 .fundo-tecnicos{
     background-color: transparent;
     padding-left: 0;
@@ -21,9 +42,10 @@ body {
     filter: blur(4px);
     max-width: 100%;
 }
-    figcaption {
+
+figcaption {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 1.4em 0 1.4em 0;
 }
 .painebts{
     max-width: 750px;

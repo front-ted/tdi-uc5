@@ -1,14 +1,16 @@
 body {
-    background-image: url('../img/02/background.png');
+    background-image: url('../img/04/background.png');
     background-attachment: fixed;
     background-color: none;
     background-size: cover;
 }
-.fundo-tecnicos{
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+h1, h2, h3, h4, h5{
+    color: #507F7F;
 }
+h1{
+    font-size: 4em;
+}
+
 .header-tecnicos{
 	position: relative;
 	overflow: hidden;
@@ -26,8 +28,11 @@ body {
 header.senac{
 	background-color:#E84B3C;
 }
-button.close img {
-    width: 30px;
+
+.fundo-tecnicos{
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
 }
 .imgoOverBlur{
     margin-bottom: -380px;
@@ -37,33 +42,53 @@ button.close img {
 .imgoOverBlur figcaption{
     color: #fff;
 }
+.imgBlur{
+    filter: blur(4px);
+    max-width: 100%;
+}
 
 figcaption {
     text-align: center;
     margin: 1.4em 0 1.4em 0;
 }
+.painelTablet{
+    background-image: url('../img/04/ipad.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 622px;
+    height: 941px;
+    width: 100%;
+}
 .painebts{
-    max-width: 750px;
+    /* max-width: 750px; */
     display: block;
     margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 28px;
+    padding-top: 93px;
 }
 .painebts img{
     cursor: pointer;
-    margin: 10px;
-    width: 100%;
+    cursor: url('../img/04/cursor.png'), pointer;
+    width: 49.6%;
+    padding: 0 !important;
+    margin: 0!important;
     max-width: 350px;
 }
 
 .painebts img:hover{
     opacity: 0.5;
 }
-.modal-header h4{ color: #fff !important;}
+.modal-header h4{ color: black; }
 .modal-content{
     /* background-color: #DC9281; */
-    background-image: url('../img/02/background_modal.png') !important;
+    background-image: url('../img/04/background_modal.png');
     background-size: cover;
-    color: #fff !important;
     padding: 40px;
+}
+button.close img{
+    width: 30px;
+
 }
 .fig-flex {
     display: flex;
@@ -81,9 +106,6 @@ figcaption {
     font-size: 18px;
     margin-bottom: 0;
 }
-h1.titulo{
-    color: #AB3A31;
-}
 h3 {
     margin-top: 60px;
 }
@@ -91,10 +113,6 @@ h4 {
     margin-top: 50px;
     margin-bottom: 20px;
 }
-.imgFloat{position: absolute; top:200px; max-width: 10%;}
-.imgFloatDir{ right: 0%;}
-.imgFloatEsq{ left: 0%;}
-.imgFloattop{ top: 500px;}
 .modal-btn {
     background-color: #c3c3c330;
     border-radius: 20px;
@@ -115,43 +133,25 @@ h4 {
     display: flex;
     justify-content: center;
 }
-
-/*----------- CARDS -----------*/
-.img-cards{
-    width: 400px;
-    height: 500px;
-    cursor: pointer;
-  }
-  .flip-card {
-    height: 500px;
-  }
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .flip-card-front {
-  }
-  .flip-card-back {
-    transform: rotateY(180deg);
-  }
-  /*----------- /CARDS -----------*/
-@media screen and (max-width:1200px){
-	.imgFloat{
+.imgFloat1{
+    float: right;
+    width: 350px;
+    max-width: 30%;
+}
+@media screen and (max-width:610px){
+    .imgFloat1{
         display: none;
-	}
-    
+    }
+    .painebts img{
+        width: 49.4%
+    }
+    .painebts {
+        /* max-width: 750px; */
+        display: block;
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 28px;
+        padding-top: 80px;
+    }
+
 }

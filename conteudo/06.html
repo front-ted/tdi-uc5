@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Imagens fotorrealistas: conceitos e processo de produção  </title>
+    <title>Técnico em Design de Interiores  </title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
     <!--<link href="custom.css" type="text/css" rel="stylesheet"> -->
     <!-- css necessario para o print -->
     <link href="css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-    <link href="css/02.css" type="text/css" rel="stylesheet">
+    <link href="css/04.css" type="text/css" rel="stylesheet">
     <link href="css/print.css" type="text/css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -41,7 +41,7 @@
 </xml><![endif]-->
 </head>
 
-<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';" class="bg6">
     <!-- MARCA D´ÁGUA -->
     <img src="images/logo_senac_colorido.png" id="marcadaguaLogo">
     <!-- /MARCA D´ÁGUA -->
@@ -69,159 +69,136 @@
         <section class="paginas">
           <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
           <div class="pagina">
-            <img src="../conteudo/img/02/img_direita_1.png"  class="imgFloat imgFloatDir imgFloattop" alt="">
-            <img src="../conteudo/img/02/img_direita_2.png"  class="imgFloat imgFloatDir" alt="">
-            <img src="../conteudo/img/02/img_esquerda_1.png" class="imgFloat imgFloatEsq imgFloattop"  alt="">
-            <img src="../conteudo/img/02/img_esquerda_2.png" class="imgFloat imgFloatEsq"  alt="">
             <div class="container">
-              <h1 class="titulo">Renderização: configuração de luz, materiais, câmeras e parâmetros de saída  </h1>
+              <!-- <img src="../conteudo/img/06/figura_1.jpg" style="" class="no-print imgFloat1" alt=""> -->
+              <h1 class="titulo">Formatos de arquivos de imagem: <i>bitmap</i>, JPG, PNG </h1>
               <p>
-                Ao produzir uma imagem renderizada para apresentar ao seu cliente, o designer deve cuidar para encantar e “vender” a ideia imaginada. Para isso, o designer deve tomar cuidado com decisões de enquadramento, iluminação, textura e formatos de imagem. Independente do software utilizado, essas decisões e alterações de parâmetros ajudarão na produção de imagens de maior qualidade. 
+                Você já se perguntou como são formadas as imagens vistas em telas? Seja na tela de um computador, seja em um <i>smartphone</i> ou câmera digital, as imagens reproduzidas são formadas por vários pontos. Isso mesmo, uma imagem digital é composta de vários pontos de cores, chamados <i>pixels</i>. 
               </p>
               <p>
-                Em seguida, serão apresentadas algumas configurações e dicas que ajudarão nessa produção de renders. Nos cards a seguir, veja os exemplos apresentados! 
+                Observe as duas figuras a seguir: 
+              </p>
+              <div class="row">
+                <div class="col-sm-6">
+                  <figure>
+                    <img src="img/06/figura_1.jpg" data-mfp-src="img/06/figura_1.jpg" class="img-responsive center-block img-responsive anim-pop zoom-imagem" alt="">
+                    <figcaption class="legenda-imagem">Figura 1 – Rosto feminino 
+    
+                      Fonte: adaptado de Ferreira (2023)  </figcaption>
+                  </figure>
+                </div>
+                <div class="col-sm-6">
+                  <figure>
+                    <img src="img/06/figura_2.jpg" data-mfp-src="img/06/figura_2.jpg" class="img-responsive center-block img-responsive anim-pop zoom-imagem" alt=" Rosto de uma mulher de olhos fechados, com as mãos apoiadas no queixo. Na testa dela, próximo do cabelo, um retângulo marca um zoneamento de pixels. ">
+                    <figcaption class="legenda-imagem">Figura 2 – Pixels em rosto feminino 
+    
+                      Fonte: adaptado de Ferreira (2023)  </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <p>
+                Perceba que, ao ampliar a fotografia do rosto feminino, na área demarcada em vermelho, é possível visualizar os <i>pixels</i> (figura 2), que são as menores partes de uma imagem. 
+              </p>
+              <p>
+                Tecnicamente, um conjunto de <i>pixels</i> forma a imagem projetada, e esse formato é então denominado <i>bitmap</i>. Bitmap é o formato padrão desenvolvido pela Microsoft para imagens digitais. Em tradução literal ,quer dizer “mapa de <i>bits</i>”, sendo <i>bit</i> a menor unidade de informação digital. Os <i>bitmap</i> nada mais são do que um conjunto de <i>pixels</i> da imagem digital. Como os <i>pixels</i> são pontos que carregam a sua informação de cor, esse formato funciona muito bem para imagens com variações complexas em suas formas e cores. Além disso, podem representar qualquer tipo de imagem. 
+              </p>
+              <p>
+                No entanto, para conseguir passar tantas informações, esse formato tem um grande tamanho, podendo chegar a demandar vários <i>megabytes</i> para armazenamento e processamento, o que dificulta o envio das imagens usando a Internet e outras aplicações. Além disso, demanda alto poder de processamento dos <i>softwares</i> para a manipulação dessas imagens. Diante desse problema, foram desenvolvidas técnicas de compressão de dados gerando diferentes formatos de arquivo de imagem baseando-se no formato padrão, como é o caso dos arquivos do tipo JPG e PNG, que você verá mais adiante. 
+              </p>
+              <h4>Resolução e definição de imagens digitais </h4>
+              <p>
+                Os conceitos de resolução e definição de imagens digitais são fundamentais para avançar na compreensão das características e da usabilidade dos tipos de arquivo de imagem. 
+              </p>
+              <p>
+                Quando se fala em resolução, refere-se à qualidade que uma imagem apresenta, o que está diretamente relacionado à sua percepção de informações dessa imagem. Ou seja, quanto maior for a resolução, maior será a definição de detalhes, com maior reprodução de cores, brilhos e contraste. 
+              </p>
+              <p>
+                Para ter mais definições e detalhes em uma imagem, são necessários mais <i>pixels</i>, pois, como mencionado anteriormente, cada <i>pixel</i> de uma imagem traz com ele uma informação de cor. Sendo assim, quanto maior for a quantidade de <i>pixels</i> (pontos) que compõem uma imagem, maior será a sua resolução e a sua qualidade. O ônus disso tudo é que, quanto maior a quantidade de <i>pixels</i>, também será maior o tamanho do arquivo (em <i>bytes</i>) salvo no computador. 
+              </p>
+              <p>
+                A resolução de uma imagem <i>bitmap</i> é medida em <i>dots per inch</i> (DPI) ou <i>pixels</i> por polegada. Assim, quanto maior for o DPI, maior será a resolução e a qualidade. 
+              </p>
+              <p>
+                Já o conceito de definição está diretamente relacionado ao tamanho de visualização da imagem. Uma mesma imagem, de igual resolução, pode ter melhor ou pior definição a depender do tamanho em que será apresentada. Isso porque, ao reduzir ou ampliar uma imagem, não se estará alterando a resolução; haverá a mesma quantidade de <i>pixels</i> em uma mesma imagem que foi reduzida ou ampliada de seu tamanho original. Observe a figura a seguir. 
+              </p>
+              <figure>
+                <img src="img/06/figura_3.png" class="img-responsive center-block" alt="Imagem mostrando diferentes tamanhos de uma mesma imagem e os efeitos de ampliação e redução. ">
+                <figcaption class="legenda-imagem">Figura 3 – Cartaz <i>pixels</i> 
+
+                  Fonte: Senac EAD (2023)  </figcaption>
+              </figure>
+              <p>
+                Na figura 3, a primeira imagem tem dimensão de 100 x 40 <i>pixels</i> e tamanho 4 x 1,60 cm. É possível perceber que ela tem um aspecto “embaçado”. Isso ocorre porque a imagem não tem uma qualidade alta, tendo uma resolução de 72 DPI. 
+              </p>
+              <p>
+                Quando essa imagem é reduzida, como a que está ao lado direito, ela passa a ter um tamanho de 265 x 1,06 cm. Perceba que a definição ficou melhor, tornando-se uma imagem mais nítida. Isso porque o processo de redução não influencia na dimensão da imagem, que continua tendo 100 x 40 <i>pixels</i>. Porém, ao ser reduzida em tamanho físico (em centímetros), consegue alcançar uma melhor definição. 
+              </p>
+              <p>
+                Já ao realizar a ampliação dessa mesma imagem, há uma piora na definição, pois ela tem baixa resolução. Após a ampliação, é possível ver os <i>pixels</i> que compõem a imagem, ocorrendo o fenômeno chamado de “pixelização”. 
+              </p>
+              <p>
+                Portanto, quando se amplia ou diminui o tamanho de uma imagem <i>bitmap</i>, não há aumento ou diminuição da quantidade de <i>pixels</i>. O que ocorre é apenas o aumento ou a diminuição do tamanho de cada pixel, mas sem acréscimo de informações de cores e detalhes. 
+              </p>
+              <h4>Formatos de arquivos </h4>
+              <p>
+                A forma como uma imagem é armazenada, ou seja, salva na memória do dispositivo digital, é o que se chama de formato de arquivo. Existem vários formatos de arquivo de imagem digitais. Aqui, serão abordados os formatos JPEG (ou JPG), PNG e <i>bitmap</i>. 
+              </p>
+              <p>
+                A escolha do formato de arquivo utilizado dependerá diretamente da sua finalidade, considerando as características mais adequadas para seu uso ou a função da imagem. A seguir, confira as características de cada um deles. 
               </p>
               <p>
                 Clique ou toque para visualizar o conteúdo. 
               </p>
 
               <!-- modal -->
-              <div class="no-print painebts" aria-hidden="true">
-              
-                    <img src="../conteudo/img/02/btn_1_hover_scale.png" data-toggle="modal" data-target="#bt1_modal" class="img-painel" alt="">
-                    <img src="../conteudo/img/02/btn_2_hover_scale.png" data-toggle="modal" data-target="#bt2_modal" class="img-painel" alt="">
-                    <img src="../conteudo/img/02/btn_3_hover_scale.png" data-toggle="modal" data-target="#bt3_modal" class="img-painel" alt="">
-                    <img src="../conteudo/img/02/btn_4_hover_scale.png" data-toggle="modal" data-target="#bt4_modal" class="img-painel" alt="">
-                    <img src="../conteudo/img/02/assets/btns/btn_cam_enq.svg" data-toggle="modal" data-target="#bt5_modal" class="img-painel" alt="">
-                 
+              <div class="no-print painelPastas" aria-hidden="true">
+                    <img src="../conteudo/img/06/btn_1.png" data-toggle="modal" data-target="#bt1_modal" class="img-painel" alt="">
+                    <img src="../conteudo/img/06/btn_2.png" data-toggle="modal" data-target="#bt2_modal" class="img-painel" alt="">
+                    <img src="../conteudo/img/06/btn_3.png" data-toggle="modal" data-target="#bt3_modal" class="img-painel" alt="">
               </div>
-              <div class="modal modal-100 fade" id="bt1_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              <div class="modal fade" id="bt1_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                 aria-live="polite" aria-atomic="true" aria-hidden="false">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content modalbg6">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                           aria-hidden="true"><img src="../conteudo/img/02/btn_fechar_modal.png" alt=""></span></button>
-                      <h4 class="modal-title" id="myModalLabel"> Configuração de luz  </h4>
+                      <h4 class="modal-title" id="myModalLabel">JPEG   </h4>
                     </div>
-                    <div class="modal-body">
-                      <p>Ao longo do processo de modelagem do ambiente de interiores, você deve cuidar para que a iluminação que está sendo colocada já atenda aos requisitos de visualização adequados da imagem, cuidando para que a imagem não fique nem muito escura nem muito clara. Para verificar se a imagem está com iluminação correta, você deve ir testando ao longo do processo.  
-                      </p>
-                      <figure>
-                        <img src="img/02/figura_1.png" class="img-responsive center-block" alt="Três imagens de um apartamento mostrando móveis, cama, portas, piso, parede, forro e decoração. Na primeira imagem, a luz está muito fraca e quase nada é visualizável. Na segunda imagem, a luz está adequada e permite observar os detalhes do espaço. Na terceira imagem, a luz está muito forte, fazendo com que detalhes sejam perdidos na visualização. ">
-                        <figcaption>Figura1 – Respectivamente, render escuro, render adequado e render claro 
-
-                          Fonte: Senac EAD (2023) </figcaption>
-                      </figure>
-                      <p>
-                        Outra dica interessante é utilizar arquivos do tipo IES (illumination engeneering society) junto às luzes do modelo. Esses arquivos “descrevem” exatamente como é o desenho da luminária e da lâmpada no ambiente, em aspectos como cor, formato do facho e intensidade do fluxo luminoso. Você consegue encontrar facilmente no site do fabricante da luminária que você quer utilizar.  
-                      </p>
-                      <figure>
-                        <img src="img/02/figura_2.png" class="img-responsive center-block" alt="Imagem mostrando um ambiente com parede cinza, piso de madeira e forro branco. No forro, três luminárias, uma ao lado da outra. Cada uma aplica um desenho diferente de luz na parede, proveniente do arquivo IES utilizado. ">
-                        <figcaption>Figura 2 – Render com três luzes de mesma intensidade, porém com diferentes arquivos IES aplicados 
-
-                          Fonte: Senac EAD (2023) </figcaption>
-                      </figure>
-                      <p>
-                        Outra opção é, dentro do próprio software, como no Promob, que apresenta nas propriedades da luz opções de perfil IES, configurar lâmpadas com foco luminoso, como demonstra a figura a seguir: 
-                      </p>
-                      <figure>
-                        <img src="img/02/figura_3.jfif" class="img-responsive center-block" alt="Tela de configuração das luzes do software Promob, em que é possível observar a opção de configurar o perfil IES de lâmpadas com foco luminoso. Cada perfil apresenta diferente abertura de faixo de luz e aspecto luminoso, criando efeitos diversos. ">
-                        <figcaption>Figura 3 – Tela de propriedade da luz do software Promob 
-
-                          Fonte: Senac EAD (2023) </figcaption>
-                      </figure>
-                      <p>Por último, mas não menos importante, é preciso lembrar que a iluminação no render deve seguir a mesma configuração da vida real. Ou seja, se você tem uma janela com vista e boa orientação solar, deve configurar a luz do Sol para entrar na sua renderização. Se você tem pontos spots e um perfil LED (light emitter diode) na casa do cliente, deve inserir em sua modelagem esses mesmos pontos e trabalhar a intensidade e a cor dessas iluminações. Lembre-se sempre de que onde tem luz, tem sombra. Manter a configuração de sombras antes de renderizar possibilita renderizações mais realísticas. </p>
-                    </div>
+                  <div class="modal-body">
+                    <p>
+                      Também conhecido como JPG, este é o formato mais popular. 
+                    </p>
+                    <p>
+                    <strong>Vantagens</strong> – Proporciona rapidez e facilidade para se trabalhar em diferentes programas de edição e manipulação de imagens. Tem um tamanho pequeno, ou seja, não ocupa muito espaço na memória do dispositivo onde será salvo nem demanda muito dos processadores dos <i>softwares</i> de edição e manipulação de imagens. Além disso, permite que a imagem seja manipulada e editada em programas específicos para essa finalidade, melhorando a qualidade e removendo defeitos e objetos indesejados. 
+                    </p>
+                    <p>
+                    <strong>Desvantagem</strong> – No processo de compressão, ocorre perda da qualidade da imagem, ou seja, alguns <i>pixels</i> são eliminados para tornar o arquivo mais leve. 
+                    </p>
+                  </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal modal-100 fade modal-promob" id="bt2_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              <div class="modal fade modal-promob" id="bt2_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                 aria-live="polite" aria-atomic="true" aria-hidden="false">
                 <div class="modal-dialog" role="document">
-                  <div class="modal-content">
+                  <div class="modal-content modalbg6">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                           aria-hidden="true"><img src="../conteudo/img/02/btn_fechar_modal.png" alt=""></span></button>
-                      <h4 class="modal-title" id="myModalLabel"> Configuração de materiais  </h4>
+                      <h4 class="modal-title" id="myModalLabel"> PNG  </h4>
                     </div>
                     <div class="modal-body">
                       <p>
-                        Os materiais sempre trazem bastante qualidade para a imagem final. Você deve cuidar para que os materiais que aparecem mais “próximos” da câmera tenham um tratamento mais apurado. Materiais que aparecem bastante, como forro, piso e parede, também devem ter um tratamento adequado.  
-</p>
-<p>Para isso, você deve explorar questões como mapas de bump e de reflexo, que fazem com que a textura não fique tão “lisa”. 
-                      </p>
-                      <figure>
-                        <img src="img/02/figura_4.png" class="img-responsive center-block" alt="Três imagens mostrando a renderização de um piso. Na primeira imagem, não está aplicado nada de reflexo, dando impressão de ser um piso opaco. Na segunda imagem, uma reflexão lisa, dando impressão de ter um revestimento de resina. Na terceira imagem, o reflexo fica mais forte nas partes claras e mais fraco nas partes escuras, trazendo variação e realismo para o piso. ">
-                        <figcaption>Figura 4 – Piso com três tipos de reflexo aplicados 
-
-                          Fonte: adaptado de 3D Blog (2011) </figcaption>
-                      </figure>
-                      <p>
-                        O bump nada mais é do que um arquivo de imagem que apresenta as texturas em preto e branco. O preto e o branco produzem os altos e baixos da superfície do acabamento. Observe, na figura 5, uma textura de piso em madeira; em seguida, na figura 6, observe que há o bump produzido com base nessa mesma textura. Aplicando essas duas imagens juntas no software de modelagem 3D desejado, você consegue criar um efeito muito mais realístico no projeto, com veios e nós da madeira bem destacados. Objetos e superfícies da vida real têm textura, certo? 
-                      </p>
-                      
-                      <figure>
-                        <img src="img/02/figura_5.jfif" class="img-responsive center-block" alt=" Piso em madeira de coloração média, com tábuas estreitas, lado a lado. ">
-                        <figcaption>Figura 5 – Piso em madeira 
-
-                          Fonte: FWStudio (2016)  </figcaption>
-                      </figure>
-                      <figure>
-                        <img src="img/02/figura_6.jfif" class="img-responsive center-block" alt="Piso em madeira, com tábuas estreitas, lado a lado, resultado de uma edição de imagem, gerando uma coloração invertida, em preto e branco, para produzir o arquivo bump. ">
-                        <figcaption>Figura 6 – Piso em madeira com coloração invertida 
-
-                          Fonte: Senac EAD (2023)  </figcaption>
-                      </figure>
-                      <p>
-                        Esses mapas podem ser trabalhados no próprio software ou também aplicados por meio de páginas da Internet. Sites como o NormalMap (para acessar, digite “NormalMap” em seu buscador) permitem que você crie um tipo de mapa de bump chamado “normal”, que faz com que você consiga trazer realismo para o material. 
+                        Este formato foi criado para facilitar a troca de imagens pela Internet. Assim como o JPEG, compacta o arquivo para então reduzir o seu tamanho e demandar menor espaço de armazenamento. 
                       </p>
                       <p>
-                        Você ainda pode criar o arquivo bump utilizando softwares de edição de imagem, como o GIMP ou o Photoshop, editando a imagem para que ela fique em tons de cinza e, na sequência, aplicando o comando Inverter, para ter acesso à imagem em tons de preto e branco. 
+                      <strong>Vantagens</strong> – O processo de compressão não gera perda de <i>pixels</i>. É possível recuperar a qualidade da imagem original ao ampliá-la. Apresenta menor risco de granulado em superfícies com grande extensão de cores. Os arquivos são mais leves que as imagens em formato bitmap. Além disso, permite gerar imagens com fundo transparente. 
                       </p>
-                      <p>
-                        Abra a textura escolhida no programa de edição de imagem escolhido (Photoshop ou GIMP). 
-                      </p>
-                      <figure>
-                        <img src="img/02/figura_7.jfif" class="img-responsive center-block" alt="Tela do software GIMP, com seus comandos abertos, na parte esquerda. E o menu superior com as opções disponibilizadas. No centro do software, a imagem da textura em madeira, ainda com suas cores originais. ">
-                        <figcaption>Figura 7 – Tela do software GIMP, com imagem da textura em madeira 
-
-                          Fonte: Senac EAD (2023) </figcaption>
-                      </figure>
-                      <p>2.Clique no menu Imagem – Modo e converta para tons de cinza. </p>
-                      
-                      <figure>
-                        <img src="img/02/figura_8.jfif" class="img-responsive center-block" alt="Tela do software GIMP, com seus comandos abertos, na parte esquerda. E o menu superior com as opções disponibilizadas. No centro do software, a imagem da textura em madeira, ainda com suas cores originais. Na parte superior dos menus, está ativo o menu Imagem – Modo – Tons de cinza. ">
-                        <figcaption>Figura 8 – Tela do software GIMP, com o menu Imagem – Modo – Tons de cinza sendo ativado 
-
-                          Fonte: Senac EAD (2023) </figcaption>
-                      </figure>
-
-                      
-                      <figure>
-                        <img src="img/02/figura_9.jfif" class="img-responsive center-block" alt="Tela do software GIMP, com seus comandos abertos, na parte esquerda. E o menu superior com as opções disponibilizadas. No centro do software, a imagem da textura em madeira, em tons de cinza. ">
-                        <figcaption>Figura 9 – Tela do software GIMP, com imagem de textura em madeira, nos tons de cinza 
-
-                          Fonte: Senac EAD (2023) </figcaption>
-                      </figure>
-                      <p>3.
-                        Clique no menu Cores – Inverter, caso esteja usando o software GIMP. Se estiver usando o Photoshop, clique no menu Imagens – Ajustes – Inverter. 
-                      </p>
-                      
-                      <figure>
-                        <img src="img/02/figura_10.jfif" class="img-responsive center-block" alt="Tela do software GIMP, com seus comandos abertos, na parte esquerda. E o menu superior com as opções disponibilizadas. No centro do software, a imagem da textura em madeira, já em tons de cinza. Na parte superior dos menus, está ativo o menu Imagem – Inverter. ">
-                        <figcaption>Figura 10 – Tela do software GIMP, com o menu Imagem – Inverter sendo ativado 
-
-                          Fonte: Senac EAD (2023) </figcaption>
-                      </figure>
-                      <p>
-                        Outra questão importante é trabalhar com texturas de qualidade com tamanho adequado. Cuide para não usar imagens com resolução muito pequena. Medida a partir de 1.000 pixels normalmente já é suficiente para a produção de materiais. Sites como o Textures e o SketchUp Texture Club (para acessá-los, digite os nomes deles em seu buscador) permitem que você baixe imagens de qualidade para criar seus materiais. Lembre-se de sempre procurar por imagens do tipo seamless, que evitam que a textura fique quadriculada. 
-                      </p>
-
-
+                      <p><strong>Desvantagem</strong> – Por terem melhor resolução que as imagens JPEG, os arquivos PNG são mais pesados. </p>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
@@ -229,53 +206,18 @@
                   </div>
                 </div>
               </div>
-              <div class="modal modal-100 fade modal-promob" id="bt3_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              <div class="modal fade modal-promob" id="bt3_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                 aria-live="polite" aria-atomic="true" aria-hidden="false">
                 <div class="modal-dialog" role="document">
-                  <div class="modal-content">
+                  <div class="modal-content modalbg6">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                           aria-hidden="true"><img src="../conteudo/img/02/btn_fechar_modal.png" alt=""></span></button>
-                      <h4 class="modal-title" id="myModalLabel">  Configuração de câmeras  </h4>
+                      <h4 class="modal-title" id="myModalLabel">  Bitmap   </h4>
                     </div>
                     <div class="modal-body">
-                      
-                      <p>
-                        Quando se fala em renderização, é preciso saber que se está falando de uma imagem. Por isso, as regras que se aplicam às fotografias podem ser utilizadas também na produção dos renders!  
-                      </p>
-                      <p>
-                        Que tal treinar o seu olhar fotográfico? Observe as imagens a seguir e clique naquela que você acredita ter o melhor enquadramento. Ao escolher uma das imagens, você saberá qual é o melhor enquadramento e o melhor posicionamento de câmera para o seu projeto de interiores.  
-                      </p>
-                      <figure>
-                        <img src="img/02/figura_11_a.jpg" class="img-responsive center-block" alt="Dois renders mostrando um quarto infantil. Na imagem da esquerda, as linhas verticais de parede, armários e móveis estão todas alinhadas com a moldura vertical da figura. Na imagem da direita, essas linhas estão “tortas” e não se alinham com a moldura da página. ">
-                        <figcaption>Figura 11 – Alinhe as verticais 
-
-                          Fonte: Senac EAD (2023) </figcaption>
-                      </figure>
-                      <figure>
-                        <img src="img/02/figura_12_a.jpg" class="img-responsive center-block" alt="  Dois renders mostrando um quarto infantil. Na imagem da esquerda, mostrando um armário, a câmera está em uma posição aproximada de 1,50 m. Com isso, é possível ver bem o piso, o forro e o armário. Na imagem da direita, a câmera está a 1,80 do chão. Com isso, o enquadramento fica estranho e não se enxerga o piso. ">
-                        <figcaption> Figura 12 – Fique na altura dos olhos 
-
-                          Fonte: Senac EAD (2023) </figcaption>
-                      </figure>
-                      <figure>
-                        <img src="img/02/figura_13_a.jpg" class="img-responsive center-block" alt=" Dois renders mostrando um quarto infantil. A câmera é a mesma, porém na imagem da esquerda está em formato retrato (mais alta que larga) e na da direita em formato paisagem (mais larga que alta). Com isso, o enquadramento fica mais adequado na imagem da esquerda. ">
-                        <figcaption>Figura 13 – Formato pode (e deve) variar 
-
-                          Fonte: Senac EAD (2023)  </figcaption>
-                      </figure>
-                      <figure>
-                        <img src="img/02/figura_14_a.jpg" class="img-responsive center-block" alt=" Dois renders mostrando um quarto infantil. Sobre as imagens, um grid de duas linhas verticais e duas linhas horizontais, dividindo as imagens em nove quadrantes. Na imagem da esquerda, os pontos de encontro das linhas mostram pontos focais importantes para a imagem. Na imagem da direita, os pontos focais não mostram nada interessante nesses encontros. ">
-                        <figcaption>Figura 14 – Use a regra dos terços 
-
-                          Fonte: Senac EAD (2023)  </figcaption>
-                      </figure>
-                      <figure>
-                        <img src="img/02/figura_15_a.jpg" class="img-responsive center-block" alt="Dois renders mostrando um quarto infantil. Na imagem da esquerda, a câmera não distorce muito o ambiente, dando uma impressão mais realista do tamanho do quarto. Na imagem da direita, a câmera está muito distorcida, dando a impressão que o quarto e os móveis são maiores que a realidade do projeto.">
-                        <figcaption>Figura 15 – Evite grandes distorções 
-
-                          Fonte: Senac EAD (2023)  </figcaption>
-                      </figure>
+                      <p><strong>Vantagem</strong> – Tem alta resolução da imagem, apresentando mais detalhes e cores. </p>
+                      <p><strong>Desvantagens</strong> – Em razão da alta resolução, é um arquivo muito grande, ou seja, ocupa muito espaço de armazenamento no dispositivo em que for salvo. Por ser um arquivo muito pesado, dificulta o seu compartilhamento via Internet ou aplicativos. Além disso, requer maior demanda de processamento do software de edição de imagens. </p>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
@@ -283,70 +225,24 @@
                   </div>
                 </div>
               </div>
-              <div class="modal modal-100 fade modal-promob" id="bt4_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                aria-live="polite" aria-atomic="true" aria-hidden="false">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                          aria-hidden="true"><img src="../conteudo/img/02/btn_fechar_modal.png" alt=""></span></button>
-                      <h4 class="modal-title" id="myModalLabel">Configuração de parâmetros de saída  </h4>
-                    </div>
-                    <div class="modal-body">
-                      <p>Quando se está com tudo pronto (iluminação, material e câmeras), é preciso cuidar como as imagens serão salvas. Em primeiro lugar, é necessário ter cuidado com a resolução da imagem que você quer. Renders com resolução muito baixa acabam não mostrando detalhes do projeto, enquanto renders com resolução muito alta demoram muito tempo para ficarem prontos. 
-
-                      </p>
-                      <p>Se você está trabalhando com imagens que ficarão apenas no mundo virtual e que não precisam de muitos detalhes de zoom, não são necessários formatos muito grandes. São os casos de imagens para postar em redes sociais e mandar virtualmente para clientes. Caso você precise imprimir (seja em folhas A3 ou em outdoor, por exemplo), terá de ter um pouco de cuidado com o tamanho da imagem.  
-
-                      </p>
-                      <p>
-                        Alguns programas de renderização (como o V-Ray) também trabalham o que chamam de elements: são imagens que mostram os componentes mais básicos que formam o seu render. É possível escolher quais produzir, ao mesmo tempo que está sendo renderizado o seu projeto. Com essas imagens, você pode trabalhar em um software como o GIMP e o Photoshop para destacar reflexos, retirar fundo, mudar a cor e assim por diante, sem precisar renderizar novamente. 
-                      </p>
-
-                      <figure>
-                        <img src="img/01/assets/dsktp/fig_02.svg" class="img-responsive center-block" alt="Seis imagens renders mostrando os render elements de uma renderização no V-Ray. Com eles, é possível fazer diversas alterações na pós-produção. Na primeira imagem, o render normal. Na segunda imagem, o render element chamado BumpNormals, usado para destacar texturas e relevo. Na terceira imagem, o render element chamado Extra Texture, usado para destacar sombras de contato. Na quarta imagem, o render element chamado Material ID Color, usado para seleção específica de um ou outro elemento. Na quinta imagem, o render element chamado Reflection, usado para trazer reflexos mais fortes. Na sexta imagem, o render element chamado Alpha, usado para fazer alterações na imagem de fundo.">
-                        <figcaption>Figura 16 – Imagem final e alguns exemplos de elements produzidos: imagem final; BumpNormals; Extra Texture; Material ID Color; Reflection; e Alpha, respectivamente 
-
-Fonte: Chaos Docs (c2023) </figcaption>
-                      </figure>
-                      <p>
-                        Finalmente, ao salvar a imagem, é possível escolher entre alguns formatos. Os mais comuns são JPG e PNG, mas as possiblidades que os programas de renderização oferecem são as mais diversas. É interessante começar trabalhando com as mais comuns e, aos poucos, descobrir o que cada formato oferece.  
-                      </p>
-                      
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="modal modal-100 fade modal-promob" id="bt5_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                aria-live="polite" aria-atomic="true" aria-hidden="false">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                          aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="myModalLabel">Posição de câmera e enquadramento  </h4>
-                    </div>
-                    <div class="modal-body">
-                      <p>
-
-                      </p>
-                      <figure>
-                        <img src="img/01/assets/dsktp/fig_02.svg" class="img-responsive center-block" alt="">
-                        <figcaption></figcaption>
-                      </figure>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
+              <h4>Quando usar cada formato de arquivo de imagem? </h4>
               <p>
-                Com essas dicas finais, os seus renders estarão prontos para serem utilizados. Se você quiser, ainda, trabalhar as imagens na pós-produção, deve ter a imagem “crua” do renderizador bem trabalhada. Softwares como o GIMP e o Photoshop conseguem destacar, mudar e evoluir bastante a imagem, mas eles têm um limite do que conseguem fazer. Com as dicas apresentadas, você terá condições de produzir uma boa imagem para seguir trabalhando ou para apresentar ao seu cliente.  
-              </p>     
+                O momento de usar cada formato de arquivo de imagem dependerá da situação, sendo preciso analisar qual será a finalidade daquela imagem. Assim, é possível definir qual formato terá o melhor custo-benefício. Ou seja, é preciso saber para que a imagem será utilizada e verificar qual formato tem melhor característica para aquela função. 
+              </p>
+              <p>
+                Por exemplo, quando é preciso enviar uma imagem pela Internet e não é necessária uma qualidade alta, ou até mesmo quando se quer postar em redes sociais, o formato JPEG atende bem, por ser leve e expressar bem as informações de cor e brilho ao olho humano. Em um projeto renderizado, o JPEG é o formato indicado para detalhes que não requerem muito trabalho de textura, como inserir imagens em uma televisão ou até mesmo personalizar um projeto com imagem do cliente em um porta-retrato. 
+              </p>
+              <p>
+                Porém, se o que você deseja é gerar uma superfície com texturas, para que um material específico seja mais realista, é preciso que a imagem passe por um processo de mapeamento em algum programa de edição. Então, quanto mais detalhado e quanto maior for a qualidade da imagem, melhor será o mapeamento das informações feito pelo programa e, assim, melhor será o resultado obtido. Nesse caso, é possível perceber que, pelas características necessárias, o formato de arquivo mais adequado é o <i>bitmap</i>. Apesar de mais pesado, tem as informações necessárias para um resultado final adequado às necessidades desse uso. 
+              </p>
+              <p>
+                Quando se está realizando um trabalho de pós-produção de uma imagem renderizada e deseja-se incluir uma imagem que ocupará um espaço muito específico, por exemplo, uma pessoa ou uma árvore, o formato de arquivo de imagem mais adequado é o PNG. Com ele, é possível remover o fundo da imagem e, assim, inserir apenas a imagem da pessoa, sem prejuízos de visualização do que está ao seu entorno. 
+              </p>
+              <p>
+                Como visto anteriormente, é preciso entender as características dos formatos de arquivo de imagem para definir qual deles usar em cada situação. Assim, é possível otimizar resultados com arquivos de renderização mais leves e fáceis de processar ou, ainda, imagens que tenham uma qualidade inferior ao desejado, sem muito realismo, em razão de uma má escolha de formato de arquivo. 
+              </p>
+
+              
             </div>
           </div>
           <!-- pagina2 -->

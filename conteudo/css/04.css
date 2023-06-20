@@ -1,0 +1,199 @@
+body {
+    background-image: url('../img/04/background.png');
+    background-attachment: fixed;
+    background-color: none;
+    background-size: cover;
+}
+
+.header-tecnicos{
+	position: relative;
+	overflow: hidden;
+	height:80px;
+	background-image: url(../images/bg-topo-red.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	/* background-image:url(../images/bg-topo-logobg.png), url(../images/bg-topo-red.jpg);
+	background-position:right,center;
+	background-repeat:no-repeat, no-repeat;
+	background-size: contain, cover; */
+
+}
+header.senac{
+	background-color:#E84B3C;
+}
+
+.bg6{
+    background-image: url('../img/06/background.png');
+    background-attachment: fixed;
+    background-color: none;
+    background-size: cover;
+}
+h1, h2, h3, h4, h5{
+    color: #507F7F;
+}
+
+.fundo-tecnicos{
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+}
+.imgoOverBlur{
+    margin-bottom: -380px;
+    z-index: 10;
+    position: relative;
+}
+.imgoOverBlur figcaption{
+    color: #fff;
+}
+.imgBlur{
+    filter: blur(4px);
+    max-width: 100%;
+}
+    figcaption {
+    text-align: center;
+    margin: 1.4em 0 1.4em 0;
+}
+.painelTablet{
+    background-image: url('../img/04/ipad.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 622px;
+    height: 941px;
+    width: 100%;
+}
+
+.modal-tablet{
+    max-height: 840px;
+}
+.painebts{
+    /* max-width: 750px; */
+    display: block;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 28px;
+    padding-top: 93px;
+}
+.painebts img{
+    cursor: pointer;
+    cursor: url('../img/04/cursor.png'), pointer;
+    width: 49.6%;
+    padding: 0 !important;
+    margin: 0!important;
+    max-width: 350px;
+}
+
+.painebts img:hover{
+    opacity: 0.5;
+}
+.painelPastas{
+
+}
+.painelPastas img{
+    width: 30%;
+    margin: 0px 1.5%;
+    cursor: pointer;
+    cursor: url('../img/04/cursor.png'), pointer;
+}
+.modal-header h4{ color: black; }
+.modal-content{
+    /* background-color: #DC9281; */
+    background-image: url('../img/04/background_modal.png');
+    background-size: cover;
+    padding: 40px;
+}
+.modal-content.modalbg6{
+    background-image: url('../img/06/background.png');
+    background-size: cover;
+    padding: 40px;
+}
+button.close img{
+    width: 30px;
+
+}
+.fig-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 30px auto;
+}
+.fig-flex img {
+    margin-left: 20px;
+}
+.fig-flex figcaption {
+    text-align: left;
+    margin-right: 20px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+h3 {
+    margin-top: 60px;
+}
+h4 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.modal-btn {
+    background-color: #c3c3c330;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 3px 3px black;
+    transition-duration: .1s;
+    max-width: 48%;
+    margin: 10px;
+}
+.modal-btn:hover {
+    transform: scale(1.01);
+    transition-duration: .1s;
+}
+.modal-btn img {
+    max-width: 100%;
+}
+.modal-container {
+    display: flex;
+    justify-content: center;
+}
+.imgFloat1{
+    float: right;
+    width: 350px;
+    max-width: 30%;
+}
+
+@media screen and (max-width:1000px){
+.painelPastas img{
+    width: 29.5%;
+}
+@media screen and (max-width:610px){
+    .painelPastas img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .painelPastas{
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+    }
+    .imgFloat1{
+        display: none;
+    }
+    .painebts img{
+        width: 49.4%
+    }
+    .painebts {
+        /* max-width: 750px; */
+        display: block;
+        margin: 0 auto;
+        padding-left: 30px;
+        padding-right: 28px;
+        padding-top: 80px;
+    }
+
+}
+
+@media screen and (max-width:450px){
+    .painebts img{
+        width: 48.4%;
+    }
+
+}
